@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ngreco Kita</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7f2;
+            color: #263326;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #245c3a;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .hero {
+            min-height: 500px;
+            padding: 100px 8%;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(
+                rgba(20, 70, 40, 0.75),
+                rgba(20, 70, 40, 0.75)
+            ),
+            url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: white;
+            color: #245c3a;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #245c3a;
+        }
+
+        .about {
+            background: white;
+        }
+
+        footer {
+            background: #183c27;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Ngreco Kita</div>
+
+        <nav>
+            <a href="#tentang">Tentang</a>
+            <a href="#jelajah">Jelajah</a>
+            <a href="#potensi">Potensi</a>
+            <a href="#kabar">Kabar</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>Ngreco Kita</h1>
+
+            <p>
+                Ruang informasi, cerita, dan potensi Ngreco.
+            </p>
+
+            <a href="#tentang" class="button">
+                Jelajahi Ngreco
+            </a>
+
+        </div>
+    </section>
+
+
+    <section id="tentang" class="about">
+
+        <div class="section-title">
+            <h2>Tentang Ngreco</h2>
+
+            <p>
+                Mengenal lebih dekat wilayah, masyarakat,
+                sejarah, dan kehidupan Ngreco.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📖 Cerita Ngreco</h3>
+
+                <p>
+                    Tempat untuk mendokumentasikan sejarah,
+                    cerita masyarakat, dan berbagai kisah
+                    yang berkembang di Ngreco.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>🗺️ Jelajah Ngreco</h3>
+
+                <p>
+                    Mengenal wilayah, dusun, jalan,
+                    tempat penting, dan berbagai lokasi
+                    yang ada di Ngreco.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>🌾 Potensi Ngreco</h3>
+
+                <p>
+                    Mengangkat potensi pertanian, UMKM,
+                    usaha masyarakat, budaya, dan
+                    kekayaan alam Ngreco.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="jelajah">
+
+        <div class="section-title">
+
+            <h2>Jelajah Ngreco</h2>
+
+            <p>
+                Nantinya bagian ini akan berisi
+                peta dan berbagai informasi wilayah.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="potensi" class="about">
+
+        <div class="section-title">
+
+            <h2>Potensi Ngreco</h2>
+
+            <p>
+                Ruang untuk mengenalkan berbagai
+                potensi yang dimiliki masyarakat Ngreco.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="kabar">
+
+        <div class="section-title">
+
+            <h2>Kabar Ngreco</h2>
+
+            <p>
+                Nantinya berisi berita, kegiatan,
+                agenda, dan cerita terbaru dari Ngreco.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Ngreco Kita
+        </p>
+
+        <p>
+            Inisiatif pribadi untuk mendokumentasikan
+            informasi, cerita, dan potensi Ngreco.
+        </p>
+
+    </footer>
+
+</body>
+</html>
